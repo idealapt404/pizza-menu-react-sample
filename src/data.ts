@@ -1,4 +1,12 @@
-const pizzaData = [
+export interface Pizza {
+  name: string;
+  ingredients: string;
+  price: number;
+  photoName: string;
+  soldOut: boolean;
+}
+
+export const pizzaData: Pizza[] = [
   {
     name: "Focaccia",
     ingredients: "Bread with italian olive oil and rosemary",
